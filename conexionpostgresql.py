@@ -1229,7 +1229,7 @@ COMMIT;
 ##cur = conn.cursor()
 
 # Ejecutar una consulta SELECT
-cur.execute("SELECT * FROM `tablacapitales`")
+cur.execute("SELECT `id`, `fecha`, `dia_semana`, `fondo`, `capital`, `email`, `banco` FROM `tablacapitales`")
 
 # Obtener todos los resultados
 rows = cursor.fetchall()
