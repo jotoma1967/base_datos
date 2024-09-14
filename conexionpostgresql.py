@@ -21,7 +21,7 @@ import psycopg2
 dbname = 'jjtorres18dbname240914'
 user = 'jose'
 password = 'Gu9VL9h84NYhNB5u3x1wIX9xYy6yL0z8'
-host = 'postgresql://jose:Gu9VL9h84NYhNB5u3x1wIX9xYy6yL0z8@dpg-critv6bv2p9s738on2lg-a.oregon-postgres.render.com/jjtorres18dbname240914'
+host = 'dpg-critv6bv2p9s738on2lg-a'
 port = '5432'
 
 # Conexión a la base de datos
