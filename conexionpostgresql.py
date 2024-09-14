@@ -40,3 +40,25 @@ print("Conectado a - ", record, "\n")
 # Cerrar la conexión
 cur.close()
 conn.close()
+
+import os
+
+'''
+# Ruta relativa del archivo o directorio
+ruta_relativa = "mi_archivo.txt"
+
+# Obtener la ruta absoluta
+ruta_absoluta = os.path.abspath(ruta_relativa)
+
+print(ruta_absoluta)
+'''
+import os
+
+# Obtener el directorio actual
+directorio_actual = os.getcwd()
+
+print(directorio_actual)
+
+
+
+
