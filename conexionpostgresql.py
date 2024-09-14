@@ -38,22 +38,24 @@ record = cur.fetchone()
 print("Conectado a - ", record, "\n")
 
 # phpMyAdmin SQL Dump
-'''
+# phpMyAdmin SQL Dump
 
-CREATE TABLE `mas1_5` (
-  `dia_semana` int DEFAULT NULL,
-  `fecha` date DEFAULT NULL,
-  `fondo` varchar(150) DEFAULT NULL,
-  `n_1_5` int DEFAULT NULL,
-  `N` int DEFAULT NULL,
-  `n_N` float(10,4) DEFAULT NULL
+crear_tabla_query = """
+
+CREATE TABLE  mas1_5  (
+   dia_semana  int DEFAULT NULL,
+   fecha  date DEFAULT NULL,
+   fondo  varchar(150) DEFAULT NULL,
+   n_1_5  int DEFAULT NULL,
+   N  int DEFAULT NULL,
+   n_N  float(10,4) DEFAULT NULL
 ) 
 
 #
-# Volcado de datos para la tabla `mas1_5`
+# Volcado de datos para la tabla  mas1_5 
 #
 
-INSERT INTO `mas1_5` (`dia_semana`, `fecha`, `fondo`, `n_1_5`, `N`, `n_N`) VALUES
+INSERT INTO  mas1_5  ( dia_semana ,  fecha ,  fondo ,  n_1_5 ,  N ,  n_N ) VALUES
 (1, '2024-09-09', 'BESTIDEAS', 2, 24, 0.0833),
 (1, '2024-09-09', 'BOLSAESPANA', 6, 31, 0.1935),
 (1, '2024-09-09', 'BOLSAEUROPA', 6, 57, 0.1053),
@@ -149,23 +151,23 @@ INSERT INTO `mas1_5` (`dia_semana`, `fecha`, `fondo`, `n_1_5`, `N`, `n_N`) VALUE
 # ############################
 
 #
-# Estructura de tabla para la tabla `menos1_5`
+# Estructura de tabla para la tabla  menos1_5 
 #
 
-CREATE TABLE `menos1_5` (
-  `dia_semana` int DEFAULT NULL,
-  `fecha` date DEFAULT NULL,
-  `fondo` varchar(150) DEFAULT NULL,
-  `n_menos_1_5` int DEFAULT NULL,
-  `N` int DEFAULT NULL,
-  `n_N` float(10,4) DEFAULT NULL
+CREATE TABLE  menos1_5  (
+   dia_semana  int DEFAULT NULL,
+   fecha  date DEFAULT NULL,
+   fondo  varchar(150) DEFAULT NULL,
+   n_menos_1_5  int DEFAULT NULL,
+   N  int DEFAULT NULL,
+   n_N  float(10,4) DEFAULT NULL
 )
 
 #
-# Volcado de datos para la tabla `menos1_5`
+# Volcado de datos para la tabla  menos1_5 
 #
 
-INSERT INTO `menos1_5` (`dia_semana`, `fecha`, `fondo`, `n_menos_1_5`, `N`, `n_N`) VALUES
+INSERT INTO  menos1_5  ( dia_semana ,  fecha ,  fondo ,  n_menos_1_5 ,  N ,  n_N ) VALUES
 (1, '2024-09-09', 'BESTIDEAS', 1, 24, 0.0417),
 (1, '2024-09-09', 'BOLSAESPANA', 1, 31, 0.0323),
 (1, '2024-09-09', 'BOLSAEUROPA', 3, 57, 0.0526),
@@ -261,23 +263,23 @@ INSERT INTO `menos1_5` (`dia_semana`, `fecha`, `fondo`, `n_menos_1_5`, `N`, `n_N
 # ############################
 
 #
-# Estructura de tabla para la tabla `menos2_5`
+# Estructura de tabla para la tabla  menos2_5 
 #
 
-CREATE TABLE `menos2_5` (
-  `dia_semana` int DEFAULT NULL,
-  `fecha` date DEFAULT NULL,
-  `fondo` varchar(150) DEFAULT NULL,
-  `n_2_5` int DEFAULT NULL,
-  `N` int DEFAULT NULL,
-  `n_N` float(10,4) DEFAULT NULL
+CREATE TABLE  menos2_5  (
+   dia_semana  int DEFAULT NULL,
+   fecha  date DEFAULT NULL,
+   fondo  varchar(150) DEFAULT NULL,
+   n_2_5  int DEFAULT NULL,
+   N  int DEFAULT NULL,
+   n_N  float(10,4) DEFAULT NULL
 ) 
 
 #
-# Volcado de datos para la tabla `menos2_5`
+# Volcado de datos para la tabla  menos2_5 
 #
 
-INSERT INTO `menos2_5` (`dia_semana`, `fecha`, `fondo`, `n_2_5`, `N`, `n_N`) VALUES
+INSERT INTO  menos2_5  ( dia_semana ,  fecha ,  fondo ,  n_2_5 ,  N ,  n_N ) VALUES
 (1, '2024-09-09', 'BESTIDEAS', 0, 24, 0.0000),
 (1, '2024-09-09', 'BOLSAESPANA', 0, 31, 0.0000),
 (1, '2024-09-09', 'BOLSAEUROPA', 1, 57, 0.0175),
@@ -373,25 +375,25 @@ INSERT INTO `menos2_5` (`dia_semana`, `fecha`, `fondo`, `n_2_5`, `N`, `n_N`) VAL
 # ############################
 
 #
-# Estructura de tabla para la tabla `resumen`
+# Estructura de tabla para la tabla  resumen 
 #
 
-CREATE TABLE `resumen` (
-  `id` int NOT NULL,
-  `fecha` date DEFAULT NULL,
-  `dia_semana` int DEFAULT NULL,
-  `fondo` varchar(20) NOT NULL DEFAULT '',
-  `n` int DEFAULT NULL,
-  `peso_porc` float DEFAULT NULL,
-  `porc_variacion` float DEFAULT NULL,
-  `banco` varchar(50) NOT NULL DEFAULT 'IBERCAJA'
+CREATE TABLE  resumen  (
+   id  int NOT NULL,
+   fecha  date DEFAULT NULL,
+   dia_semana  int DEFAULT NULL,
+   fondo  varchar(20) NOT NULL DEFAULT '',
+   n  int DEFAULT NULL,
+   peso_porc  float DEFAULT NULL,
+   porc_variacion  float DEFAULT NULL,
+   banco  varchar(50) NOT NULL DEFAULT 'IBERCAJA'
 ) 
 
 #
-# Volcado de datos para la tabla `resumen`
+# Volcado de datos para la tabla  resumen 
 #
 
-INSERT INTO `resumen` (`id`, `fecha`, `dia_semana`, `fondo`, `n`, `peso_porc`, `porc_variacion`, `banco`) VALUES
+INSERT INTO  resumen  ( id ,  fecha ,  dia_semana ,  fondo ,  n ,  peso_porc ,  porc_variacion ,  banco ) VALUES
 (0, '0000-00-00', 0, '', 0, 0, 0, ''),
 (0, '2024-09-13', 5, 'BESTIDEAS', 24, 1, 0.64919, '0.125'),
 (0, '2024-09-13', 5, 'BOLSAESPANA', 31, 0.9444, 0.99272, '0.484'),
@@ -415,25 +417,25 @@ INSERT INTO `resumen` (`id`, `fecha`, `dia_semana`, `fondo`, `n`, `peso_porc`, `
 # ############################
 
 #
-# Estructura de tabla para la tabla `resumen5dias`
+# Estructura de tabla para la tabla  resumen5dias 
 #
 
-CREATE TABLE `resumen5dias` (
-  `id` int NOT NULL,
-  `fecha` date DEFAULT NULL,
-  `dia_semana` int DEFAULT NULL,
-  `fondo` varchar(20) NOT NULL DEFAULT '',
-  `n` int DEFAULT NULL,
-  `peso_porc` float DEFAULT NULL,
-  `porc_variacion` float DEFAULT NULL,
-  `banco` varchar(50) NOT NULL
+CREATE TABLE  resumen5dias  (
+   id  int NOT NULL,
+   fecha  date DEFAULT NULL,
+   dia_semana  int DEFAULT NULL,
+   fondo  varchar(20) NOT NULL DEFAULT '',
+   n  int DEFAULT NULL,
+   peso_porc  float DEFAULT NULL,
+   porc_variacion  float DEFAULT NULL,
+   banco  varchar(50) NOT NULL
 )
 
 #
-# Volcado de datos para la tabla `resumen5dias`
+# Volcado de datos para la tabla  resumen5dias 
 #
 
-INSERT INTO `resumen5dias` (`id`, `fecha`, `dia_semana`, `fondo`, `n`, `peso_porc`, `porc_variacion`, `banco`) VALUES
+INSERT INTO  resumen5dias  ( id ,  fecha ,  dia_semana ,  fondo ,  n ,  peso_porc ,  porc_variacion ,  banco ) VALUES
 (0, '2024-09-09', 1, 'BESTIDEAS', 24, 1, 0.56381, '0.083'),
 (0, '2024-09-09', 1, 'BOLSAESPANA', 31, 0.9368, 0.74975, '0.194'),
 (0, '2024-09-09', 1, 'BOLSAEUROPA', 57, 0.9014, 0.33928, '0.105'),
@@ -529,22 +531,22 @@ INSERT INTO `resumen5dias` (`id`, `fecha`, `dia_semana`, `fondo`, `n`, `peso_por
 # ############################
 
 #
-# Estructura de tabla para la tabla `signup`
+# Estructura de tabla para la tabla  signup 
 #
 
-CREATE TABLE `signup` (
-  `id` int NOT NULL,
-  `fecha` date DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `contrasena` varchar(30) DEFAULT NULL,
-  `banco` varchar(50) NOT NULL DEFAULT 'IBERCAJA'
+CREATE TABLE  signup  (
+   id  int NOT NULL,
+   fecha  date DEFAULT NULL,
+   email  varchar(255) DEFAULT NULL,
+   contrasena  varchar(30) DEFAULT NULL,
+   banco  varchar(50) NOT NULL DEFAULT 'IBERCAJA'
 ) 
 
 #
-# Volcado de datos para la tabla `signup`
+# Volcado de datos para la tabla  signup 
 #
 
-INSERT INTO `signup` (`id`, `fecha`, `email`, `contrasena`, `banco`) VALUES
+INSERT INTO  signup  ( id ,  fecha ,  email ,  contrasena ,  banco ) VALUES
 (0, '2024-02-01', 'b@a.a', '18082470P', 'IBERCAJA'),
 (0, '2024-02-02', 'a@a.a', '18082470P', 'IBERCAJA'),
 (0, '2024-02-02', 'b@a.a', '18082470P', 'IBERCAJA'),
@@ -827,24 +829,24 @@ INSERT INTO `signup` (`id`, `fecha`, `email`, `contrasena`, `banco`) VALUES
 # ############################
 
 #
-# Estructura de tabla para la tabla `tablacapitales`
+# Estructura de tabla para la tabla  tablacapitales 
 #
 
-CREATE TABLE `tablacapitales` (
-  `id` int NOT NULL,
-  `fecha` date DEFAULT NULL,
-  `dia_semana` int DEFAULT NULL,
-  `fondo` varchar(20) DEFAULT NULL,
-  `capital` float DEFAULT '0',
-  `email` varchar(255) DEFAULT NULL,
-  `banco` varchar(50) NOT NULL DEFAULT 'IBERCAJA'
+CREATE TABLE  tablacapitales  (
+   id  int NOT NULL,
+   fecha  date DEFAULT NULL,
+   dia_semana  int DEFAULT NULL,
+   fondo  varchar(20) DEFAULT NULL,
+   capital  float DEFAULT '0',
+   email  varchar(255) DEFAULT NULL,
+   banco  varchar(50) NOT NULL DEFAULT 'IBERCAJA'
 ) 
 
 #
-# Volcado de datos para la tabla `tablacapitales`
+# Volcado de datos para la tabla  tablacapitales 
 #
 
-INSERT INTO `tablacapitales` (`id`, `fecha`, `dia_semana`, `fondo`, `capital`, `email`, `banco`) VALUES
+INSERT INTO  tablacapitales  ( id ,  fecha ,  dia_semana ,  fondo ,  capital ,  email ,  banco ) VALUES
 (1, '2022-12-19', 1, 'BOLSAESPANA', 0, 'ff@a.a', 'IBERCAJA'),
 (2, '2022-12-19', 1, 'BOLSAEUROPA', 0, 'ff@a.a', 'IBERCAJA'),
 (3, '2022-12-19', 1, 'BOLSAINTERNACIONAL', 0, 'ff@a.a', 'IBERCAJA'),
@@ -1102,27 +1104,27 @@ INSERT INTO `tablacapitales` (`id`, `fecha`, `dia_semana`, `fondo`, `capital`, `
 # ############################
 
 #
-# Estructura de tabla para la tabla `tablariesgos`
+# Estructura de tabla para la tabla  tablariesgos 
 #
 
-CREATE TABLE `tablariesgos` (
-  `id` int NOT NULL,
-  `fecha` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `fondo` varchar(20) DEFAULT NULL,
-  `minima_ganancia` float DEFAULT '1',
-  `dias_ganancia` float DEFAULT '4',
-  `dias_perdidas` float DEFAULT '5',
-  `minima_bajada` float DEFAULT '-1.8',
-  `maxima_perdida` float DEFAULT '5.8',
-  `email` varchar(255) DEFAULT NULL,
-  `banco` varchar(50) NOT NULL DEFAULT 'IBERCAJA'
+CREATE TABLE  tablariesgos  (
+   id  int NOT NULL,
+   fecha  timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   fondo  varchar(20) DEFAULT NULL,
+   minima_ganancia  float DEFAULT '1',
+   dias_ganancia  float DEFAULT '4',
+   dias_perdidas  float DEFAULT '5',
+   minima_bajada  float DEFAULT '-1.8',
+   maxima_perdida  float DEFAULT '5.8',
+   email  varchar(255) DEFAULT NULL,
+   banco  varchar(50) NOT NULL DEFAULT 'IBERCAJA'
 ) 
 
 #
-# Volcado de datos para la tabla `tablariesgos`
+# Volcado de datos para la tabla  tablariesgos 
 #
 
-INSERT INTO `tablariesgos` (`id`, `fecha`, `fondo`, `minima_ganancia`, `dias_ganancia`, `dias_perdidas`, `minima_bajada`, `maxima_perdida`, `email`, `banco`) VALUES
+INSERT INTO  tablariesgos  ( id ,  fecha ,  fondo ,  minima_ganancia ,  dias_ganancia ,  dias_perdidas ,  minima_bajada ,  maxima_perdida ,  email ,  banco ) VALUES
 (0, '2024-01-17 16:15:37', 'BESTIDEAS', 1.1, 4, 5, -2.51, -5.77, 'b@a.a', 'IBERCAJA'),
 (0, '2024-01-17 16:15:37', 'BOLSAESPAÑA', 1.3, 4, 5, -1.92, -4, 'b@a.a', 'IBERCAJA'),
 (0, '2024-01-17 16:15:37', 'BOLSAEUROPA', 0.94, 4, 5, -1.56, -3.5, 'b@a.a', 'IBERCAJA'),
@@ -1187,21 +1189,21 @@ INSERT INTO `tablariesgos` (`id`, `fecha`, `fondo`, `minima_ganancia`, `dias_gan
 # ############################
 
 #
-# Estructura de tabla para la tabla `tabla_datos_hoy`
+# Estructura de tabla para la tabla  tabla_datos_hoy 
 #
 
-CREATE TABLE `tabla_datos_hoy` (
-  `fecha` datetime DEFAULT CURRENT_TIMESTAMP,
-  `dia_semana` int DEFAULT NULL,
-  `fondo` varchar(20) DEFAULT NULL,
-  `Ticker` varchar(15) DEFAULT NULL,
-  `accion` varchar(60) DEFAULT NULL,
-  `porcentaje` float DEFAULT NULL,
-  `Modif_porc` float DEFAULT NULL,
-  `Peso_absoluto` float DEFAULT NULL,
-  `Precio` float DEFAULT NULL,
-  `banco` varchar(20) DEFAULT NULL,
-  `cnmv` varchar(20) DEFAULT NULL
+CREATE TABLE  tabla_datos_hoy  (
+   fecha  datetime DEFAULT CURRENT_TIMESTAMP,
+   dia_semana  int DEFAULT NULL,
+   fondo  varchar(20) DEFAULT NULL,
+   Ticker  varchar(15) DEFAULT NULL,
+   accion  varchar(60) DEFAULT NULL,
+   porcentaje  float DEFAULT NULL,
+   Modif_porc  float DEFAULT NULL,
+   Peso_absoluto  float DEFAULT NULL,
+   Precio  float DEFAULT NULL,
+   banco  varchar(20) DEFAULT NULL,
+   cnmv  varchar(20) DEFAULT NULL
 )
 
 #
@@ -1209,23 +1211,30 @@ CREATE TABLE `tabla_datos_hoy` (
 #
 
 #
-# Indices de la tabla `tablacapitales`
+# Indices de la tabla  tablacapitales 
 #
-ALTER TABLE `tablacapitales`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE  tablacapitales 
+  ADD PRIMARY KEY ( id );
 
 #
 # AUTO_INCREMENT de las tablas volcadas
 #
 
 #
-# AUTO_INCREMENT de la tabla `tablacapitales`
+# AUTO_INCREMENT de la tabla  tablacapitales 
 #
-ALTER TABLE `tablacapitales`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8894;
-COMMIT;
+ALTER TABLE  tablacapitales 
+  MODIFY  id  int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8894;
 
-'''
+"""
+
+cur.execute(crear_tabla_query)
+
+    # Confirmar los cambios
+conn.commit()
+
+
+
 ##cur = conn.cursor()
 
 # Ejecutar una consulta SELECT sobre tablacapitales
