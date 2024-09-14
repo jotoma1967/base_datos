@@ -1,4 +1,20 @@
 #onexion a postgresql
+
+import pip
+
+
+try:
+    import psycopg2
+
+except ImportError:
+
+    pip.main(["install","psycopg2"])
+
+    import psycopg2
+
+
+
+
 import psycopg2
 
 # Datos de conexión
