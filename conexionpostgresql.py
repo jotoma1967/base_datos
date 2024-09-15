@@ -47,7 +47,6 @@ CREATE TABLE  mas1_5  ( dia_semana  int DEFAULT NULL,  fecha  date DEFAULT NULL,
 
  
  
-
 INSERT INTO  mas1_5  ( dia_semana ,  fecha ,  fondo ,  n_1_5 ,  N ,  n_N ) VALUES (1, '2024-09-09', 'BESTIDEAS', 2, 24, 0.0833), (1, '2024-09-09', 'BOLSAESPANA', 6, 31, 0.1935), (1, '2024-09-09', 'BOLSAEUROPA', 6, 57, 0.1053), (1, '2024-09-09', 'BOLSAINTERNACIONAL', 21, 74, 0.2838), (1, '2024-09-09', 'BOLSAUSA', 24, 76, 0.3158), (1, '2024-09-09', 'DIVIDENDO', 8, 42, 0.1905), (1, '2024-09-09', 'FINANCIERO', 18, 34, 0.5294), (1, '2024-09-09', 'GLOBAL', 5, 48, 0.1042), (1, '2024-09-09', 'JAPON', 4, 45, 0.0889), (1, '2024-09-09', 'MEGATRENDS', 12, 37, 0.3243), (1, '2024-09-09', 'NEWENERGY', 8, 37, 0.2162), (1, '2024-09-09', 'SANIDAD', 10, 50, 0.2000), (1, '2024-09-09', 'SECTORINMOBILIARIO', 8, 46, 0.1739), (1, '2024-09-09', 'SMALLCAPS', 18, 67, 0.2687), (1, '2024-09-09', 'TECNOLOGICO', 9, 37, 0.2432), (1, '2024-09-09', 'ZVIX', 0, 0, 0.0000), (1, '2024-09-09', 'ZVSTOXX', 0, 2, 0.0000), (1, '2024-09-09', 'ZVXN', 0, 0, 0.0000);
 
                               
@@ -69,7 +68,7 @@ INSERT INTO  menos1_5  ( dia_semana ,  fecha ,  fondo ,  n_menos_1_5 ,  N ,  n_N
 
  
 
-CREATE TABLE  menos2_5  (dia_semana  int DEFAULT NULL, fecha  date DEFAULT NULL, fondo  varchar(150) DEFAULT NULL, n_2_5  int DEFAULT NULL, N  int DEFAULT NULL, n_N   NUMERIC(10,4) DEFAULT NULL) 
+CREATE TABLE  menos2_5  (dia_semana  int DEFAULT NULL, fecha  date DEFAULT NULL, fondo  varchar(150) DEFAULT NULL, n_2_5  int DEFAULT NULL, N  int DEFAULT NULL, n_N   NUMERIC(10,4) DEFAULT NULL);
 
  
 
