@@ -140,7 +140,7 @@ conn.commit()
 ##cur = conn.cursor()
 
 # Ejecutar una consulta SELECT sobre tablacapitales
-cur.execute("SELECT fondo FROM tablacapitales")
+cur.execute("SELECT  id ,  fecha ,  dia_semana ,  fondo ,  capital ,  email ,  banco   FROM tablacapitales")
 
 # Obtener todos los resultados
 rows = cur.fetchall()
