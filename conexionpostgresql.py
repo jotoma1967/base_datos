@@ -41,7 +41,7 @@ print("Conectado a - ", record, "\n")
 # phpMyAdmin SQL Dump
 
 crear_tabla_query = """
-# phpMyAdmin SQL Dump
+  phpMyAdmin SQL Dump
 
 
 CREATE TABLE  mas1_5  (
@@ -53,9 +53,8 @@ CREATE TABLE  mas1_5  (
    n_N   NUMERIC(10,4) DEFAULT NULL
 ) 
 
-#
-# Volcado de datos para la tabla  mas1_5 
-#
+ 
+ 
 
 INSERT INTO  mas1_5  ( dia_semana ,  fecha ,  fondo ,  n_1_5 ,  N ,  n_N ) VALUES
 (1, '2024-09-09', 'BESTIDEAS', 2, 24, 0.0833),
@@ -150,11 +149,10 @@ INSERT INTO  mas1_5  ( dia_semana ,  fecha ,  fondo ,  n_1_5 ,  N ,  n_N ) VALUE
 (5, '2024-09-13', 'ZVSTOXX', 0, 2, 0.0000),
 (5, '2024-09-13', 'ZVXN', 0, 0, 0.0000);
 
-# ############################
+                              
 
-#
-# Estructura de tabla para la tabla  menos1_5 
-#
+
+ 
 
 CREATE TABLE  menos1_5  (
    dia_semana  int DEFAULT NULL,
@@ -165,9 +163,9 @@ CREATE TABLE  menos1_5  (
    n_N   NUMERIC(10,4) DEFAULT NULL
 )
 
-#
-# Volcado de datos para la tabla  menos1_5 
-#
+ 
+ 
+ 
 
 INSERT INTO  menos1_5  ( dia_semana ,  fecha ,  fondo ,  n_menos_1_5 ,  N ,  n_N ) VALUES
 (1, '2024-09-09', 'BESTIDEAS', 1, 24, 0.0417),
@@ -262,11 +260,11 @@ INSERT INTO  menos1_5  ( dia_semana ,  fecha ,  fondo ,  n_menos_1_5 ,  N ,  n_N
 (5, '2024-09-13', 'ZVSTOXX', 2, 2, 1.0000),
 (5, '2024-09-13', 'ZVXN', 1, 0, 0.0000);
 
-# ############################
+                              
 
-#
-# Estructura de tabla para la tabla  menos2_5 
-#
+ 
+
+ 
 
 CREATE TABLE  menos2_5  (
    dia_semana  int DEFAULT NULL,
@@ -277,9 +275,9 @@ CREATE TABLE  menos2_5  (
    n_N   NUMERIC(10,4) DEFAULT NULL
 ) 
 
-#
-# Volcado de datos para la tabla  menos2_5 
-#
+ 
+
+ 
 
 INSERT INTO  menos2_5  ( dia_semana ,  fecha ,  fondo ,  n_2_5 ,  N ,  n_N ) VALUES
 (1, '2024-09-09', 'BESTIDEAS', 0, 24, 0.0000),
@@ -374,11 +372,11 @@ INSERT INTO  menos2_5  ( dia_semana ,  fecha ,  fondo ,  n_2_5 ,  N ,  n_N ) VAL
 (5, '2024-09-13', 'ZVSTOXX', 1, 2, 0.5000),
 (5, '2024-09-13', 'ZVXN', 0, 0, 0.0000);
 
-# ############################
+                              
 
-#
-# Estructura de tabla para la tabla  resumen 
-#
+ 
+
+ 
 
 CREATE TABLE  resumen  (
    id  int NOT NULL,
@@ -391,9 +389,9 @@ CREATE TABLE  resumen  (
    banco  varchar(50) NOT NULL DEFAULT 'IBERCAJA'
 ) 
 
-#
-# Volcado de datos para la tabla  resumen 
-#
+ 
+
+ 
 
 INSERT INTO  resumen  ( id ,  fecha ,  dia_semana ,  fondo ,  n ,  peso_porc ,  porc_variacion ,  banco ) VALUES
 (0, '0000-00-00', 0, '', 0, 0, 0, ''),
@@ -416,11 +414,11 @@ INSERT INTO  resumen  ( id ,  fecha ,  dia_semana ,  fondo ,  n ,  peso_porc ,  
 (0, '2024-09-13', 5, 'ZVSTOXX', 2, 0.3, -0.54621, '0'),
 (0, '2024-09-13', 5, 'ZVXN', 0, 0.1, -0.20709, 'NAN');
 
-# ############################
+                              
 
-#
-# Estructura de tabla para la tabla  resumen5dias 
-#
+ 
+  
+ 
 
 CREATE TABLE  resumen5dias  (
    id  int NOT NULL,
@@ -433,9 +431,9 @@ CREATE TABLE  resumen5dias  (
    banco  varchar(50) NOT NULL
 )
 
-#
-# Volcado de datos para la tabla  resumen5dias 
-#
+ 
+  
+ 
 
 INSERT INTO  resumen5dias  ( id ,  fecha ,  dia_semana ,  fondo ,  n ,  peso_porc ,  porc_variacion ,  banco ) VALUES
 (0, '2024-09-09', 1, 'BESTIDEAS', 24, 1, 0.56381, '0.083'),
@@ -530,11 +528,11 @@ INSERT INTO  resumen5dias  ( id ,  fecha ,  dia_semana ,  fondo ,  n ,  peso_por
 (0, '2024-09-13', 5, 'ZVSTOXX', 2, 0.3, -0.54621, '0'),
 (0, '2024-09-13', 5, 'ZVXN', 0, 0.1, -0.20709, 'NAN');
 
-# ############################
+                              
 
-#
-# Estructura de tabla para la tabla  signup 
-#
+ 
+ 
+ 
 
 CREATE TABLE  signup  (
    id  int NOT NULL,
@@ -544,9 +542,8 @@ CREATE TABLE  signup  (
    banco  varchar(50) NOT NULL DEFAULT 'IBERCAJA'
 ) 
 
-#
-# Volcado de datos para la tabla  signup 
-#
+
+ 
 
 INSERT INTO  signup  ( id ,  fecha ,  email ,  contrasena ,  banco ) VALUES
 (0, '2024-02-01', 'b@a.a', '18082470P', 'IBERCAJA'),
@@ -828,11 +825,11 @@ INSERT INTO  signup  ( id ,  fecha ,  email ,  contrasena ,  banco ) VALUES
 (0, '2024-09-13', 'm@a.a', '18082470P', 'IBERCAJA'),
 (0, '2024-09-13', 'a@a.a', '18082470P', 'IBERCAJA');
 
-# ############################
+                              
 
-#
-# Estructura de tabla para la tabla  tablacapitales 
-#
+ 
+
+ 
 
 CREATE TABLE  tablacapitales  (
    id  int NOT NULL,
@@ -844,9 +841,9 @@ CREATE TABLE  tablacapitales  (
    banco  varchar(50) NOT NULL DEFAULT 'IBERCAJA'
 ) 
 
-#
-# Volcado de datos para la tabla  tablacapitales 
-#
+ 
+
+ 
 
 INSERT INTO  tablacapitales  ( id ,  fecha ,  dia_semana ,  fondo ,  capital ,  email ,  banco ) VALUES
 (1, '2022-12-19', 1, 'BOLSAESPANA', 0, 'ff@a.a', 'IBERCAJA'),
@@ -1103,11 +1100,11 @@ INSERT INTO  tablacapitales  ( id ,  fecha ,  dia_semana ,  fondo ,  capital ,  
 (8892, '2024-09-13', 5, 'SMALLCAPS', 0, 'm@a.a', 'IBERCAJA'),
 (8893, '2024-09-13', 5, 'TECNOLOGICO', 0, 'm@a.a', 'IBERCAJA');
 
-# ############################
+                              
 
-#
-# Estructura de tabla para la tabla  tablariesgos 
-#
+ 
+
+ 
 
 CREATE TABLE  tablariesgos  (
    id  int NOT NULL,
@@ -1122,9 +1119,9 @@ CREATE TABLE  tablariesgos  (
    banco  varchar(50) NOT NULL DEFAULT 'IBERCAJA'
 ) 
 
-#
-# Volcado de datos para la tabla  tablariesgos 
-#
+ 
+  
+ 
 
 INSERT INTO  tablariesgos  ( id ,  fecha ,  fondo ,  minima_ganancia ,  dias_ganancia ,  dias_perdidas ,  minima_bajada ,  maxima_perdida ,  email ,  banco ) VALUES
 (0, '2024-01-17 16:15:37', 'BESTIDEAS', 1.1, 4, 5, -2.51, -5.77, 'b@a.a', 'IBERCAJA'),
@@ -1188,11 +1185,11 @@ INSERT INTO  tablariesgos  ( id ,  fecha ,  fondo ,  minima_ganancia ,  dias_gan
 (0, '2024-06-18 11:22:16', 'SMALLCAPS', 1.23, 4, 5, -2.27, -2.74, 'm@a.a', 'IBERCAJA'),
 (0, '2024-06-18 11:22:16', 'TECNOLOGICO', 1.38, 4, 5, -2.77, -3.52, 'm@a.a', 'IBERCAJA');
 
-# ############################
+                              
 
-#
-# Estructura de tabla para la tabla  tabla_datos_hoy 
-#
+ 
+  
+ 
 
 CREATE TABLE  tabla_datos_hoy  (
    fecha  datetime DEFAULT CURRENT_TIMESTAMP,
@@ -1208,25 +1205,20 @@ CREATE TABLE  tabla_datos_hoy  (
    cnmv  varchar(20) DEFAULT NULL
 )
 
-#
-# Índices para tablas volcadas
-#
 
-#
-# Indices de la tabla  tablacapitales 
-#
+ 
 ALTER TABLE  tablacapitales 
   ADD PRIMARY KEY ( id );
 
-#
-# AUTO_INCREMENT de las tablas volcadas
-#
+ 
+AUTO_INCREMENT de las tablas volcadas
+ 
 
-#
-# AUTO_INCREMENT de la tabla  tablacapitales 
-#
-ALTER TABLE  tablacapitales 
-  MODIFY  id  int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8894;
+ 
+AUTO_INCREMENT de la tabla  tablacapitales 
+ 
+ALTER TABLE  tablacapitales  MODIFY  id  int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8894;
+
 
 
 
