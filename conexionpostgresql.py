@@ -128,7 +128,7 @@ INSERT INTO  tablariesgos  ( id ,  fecha ,  fondo ,  minima_ganancia ,  dias_gan
 
 CREATE TABLE  tabla_datos_hoy(fecha  date DEFAULT NULL, dia_semana  int DEFAULT NULL, fondo  varchar(20) DEFAULT NULL, Ticker  varchar(15) DEFAULT NULL, accion  varchar(60) DEFAULT NULL, porcentaje   NUMERIC DEFAULT NULL, Modif_porc   NUMERIC DEFAULT NULL, Peso_absoluto   NUMERIC DEFAULT NULL, Precio   NUMERIC DEFAULT NULL, banco  varchar(20) DEFAULT NULL, cnmv  varchar(20) DEFAULT NULL);
 
-ALTER TALE  tablacapitales   ADD PRIMARY KEY ( id );
+ALTER TABLE  tablacapitales   ADD PRIMARY KEY ( id );
 
 AUTO_INCREMENT de las tablas volcadas
  
