@@ -144,7 +144,7 @@ conn.commit()
 cur.execute("SELECT fondo FROM tablacapitales")
 
 # Obtener todos los resultados
-rows = cursor.fetchall()
+rows = cur.fetchall()
 
 # Imprimir los resultados
 for row in rows:
