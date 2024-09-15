@@ -130,9 +130,7 @@ CREATE TABLE  tabla_datos_hoy(fecha  date DEFAULT NULL, dia_semana  int DEFAULT 
 
 ALTER TABLE  tablacapitales   ADD PRIMARY KEY ( id );
 
-AUTO_INCREMENT de las tablas volcadas
- 
-AUTO_INCREMENT de la tabla  tablacapitales 
+
  
 ALTER TABLE  tablacapitales  MODIFY  id  int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8894;
 
