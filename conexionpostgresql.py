@@ -37,12 +37,10 @@ cur.execute("SELECT version();")
 record = cur.fetchone()
 print("Conectado a - ", record, "\n")
 
-# phpMyAdmin SQL Dump
-# phpMyAdmin SQL Dump
+
 
 crear_tabla_query = """
-  phpMyAdmin SQL Dump
-
+  
 
 CREATE TABLE  mas1_5  (
    dia_semana  int DEFAULT NULL,
