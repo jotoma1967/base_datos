@@ -41,6 +41,8 @@ print("Conectado a - ", record, "\n")
 # phpMyAdmin SQL Dump
 
 crear_tabla_query = """
+# phpMyAdmin SQL Dump
+
 
 CREATE TABLE  mas1_5  (
    dia_semana  int DEFAULT NULL,
@@ -48,7 +50,7 @@ CREATE TABLE  mas1_5  (
    fondo  varchar(150) DEFAULT NULL,
    n_1_5  int DEFAULT NULL,
    N  int DEFAULT NULL,
-   n_N  float(10,4) DEFAULT NULL
+   n_N   NUMERIC(10,4) DEFAULT NULL
 ) 
 
 #
@@ -160,7 +162,7 @@ CREATE TABLE  menos1_5  (
    fondo  varchar(150) DEFAULT NULL,
    n_menos_1_5  int DEFAULT NULL,
    N  int DEFAULT NULL,
-   n_N  float(10,4) DEFAULT NULL
+   n_N   NUMERIC(10,4) DEFAULT NULL
 )
 
 #
@@ -272,7 +274,7 @@ CREATE TABLE  menos2_5  (
    fondo  varchar(150) DEFAULT NULL,
    n_2_5  int DEFAULT NULL,
    N  int DEFAULT NULL,
-   n_N  float(10,4) DEFAULT NULL
+   n_N   NUMERIC(10,4) DEFAULT NULL
 ) 
 
 #
@@ -384,8 +386,8 @@ CREATE TABLE  resumen  (
    dia_semana  int DEFAULT NULL,
    fondo  varchar(20) NOT NULL DEFAULT '',
    n  int DEFAULT NULL,
-   peso_porc  float DEFAULT NULL,
-   porc_variacion  float DEFAULT NULL,
+   peso_porc   NUMERIC DEFAULT NULL,
+   porc_variacion   NUMERIC DEFAULT NULL,
    banco  varchar(50) NOT NULL DEFAULT 'IBERCAJA'
 ) 
 
@@ -426,8 +428,8 @@ CREATE TABLE  resumen5dias  (
    dia_semana  int DEFAULT NULL,
    fondo  varchar(20) NOT NULL DEFAULT '',
    n  int DEFAULT NULL,
-   peso_porc  float DEFAULT NULL,
-   porc_variacion  float DEFAULT NULL,
+   peso_porc   NUMERIC DEFAULT NULL,
+   porc_variacion   NUMERIC DEFAULT NULL,
    banco  varchar(50) NOT NULL
 )
 
@@ -837,7 +839,7 @@ CREATE TABLE  tablacapitales  (
    fecha  date DEFAULT NULL,
    dia_semana  int DEFAULT NULL,
    fondo  varchar(20) DEFAULT NULL,
-   capital  float DEFAULT '0',
+   capital   NUMERIC DEFAULT '0',
    email  varchar(255) DEFAULT NULL,
    banco  varchar(50) NOT NULL DEFAULT 'IBERCAJA'
 ) 
@@ -1111,11 +1113,11 @@ CREATE TABLE  tablariesgos  (
    id  int NOT NULL,
    fecha  timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
    fondo  varchar(20) DEFAULT NULL,
-   minima_ganancia  float DEFAULT '1',
-   dias_ganancia  float DEFAULT '4',
-   dias_perdidas  float DEFAULT '5',
-   minima_bajada  float DEFAULT '-1.8',
-   maxima_perdida  float DEFAULT '5.8',
+   minima_ganancia   NUMERIC DEFAULT '1',
+   dias_ganancia   NUMERIC DEFAULT '4',
+   dias_perdidas   NUMERIC DEFAULT '5',
+   minima_bajada   NUMERIC DEFAULT '-1.8',
+   maxima_perdida   NUMERIC DEFAULT '5.8',
    email  varchar(255) DEFAULT NULL,
    banco  varchar(50) NOT NULL DEFAULT 'IBERCAJA'
 ) 
@@ -1198,10 +1200,10 @@ CREATE TABLE  tabla_datos_hoy  (
    fondo  varchar(20) DEFAULT NULL,
    Ticker  varchar(15) DEFAULT NULL,
    accion  varchar(60) DEFAULT NULL,
-   porcentaje  float DEFAULT NULL,
-   Modif_porc  float DEFAULT NULL,
-   Peso_absoluto  float DEFAULT NULL,
-   Precio  float DEFAULT NULL,
+   porcentaje   NUMERIC DEFAULT NULL,
+   Modif_porc   NUMERIC DEFAULT NULL,
+   Peso_absoluto   NUMERIC DEFAULT NULL,
+   Precio   NUMERIC DEFAULT NULL,
    banco  varchar(20) DEFAULT NULL,
    cnmv  varchar(20) DEFAULT NULL
 )
@@ -1225,6 +1227,9 @@ ALTER TABLE  tablacapitales
 #
 ALTER TABLE  tablacapitales 
   MODIFY  id  int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8894;
+
+
+
 
 """
 
