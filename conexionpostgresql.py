@@ -88,7 +88,7 @@ CREATE TABLE  resumen  ( id  int NOT NULL, fecha  date DEFAULT NULL, dia_semana 
 
  
 
-INSERT INTO  resumen  ( id ,  fecha ,  dia_semana ,  fondo ,  n ,  peso_porc ,  porc_variacion ,  banco ) VALUES (0, '0000-00-00', 0, '', 0, 0, 0, ''), (0, '2024-09-13', 5, 'BESTIDEAS', 24, 1, 0.64919, '0.125'), (0, '2024-09-13', 5, 'BOLSAESPANA', 31, 0.9444, 0.99272, '0.484'), (0, '2024-09-13', 5, 'BOLSAEUROPA', 57, 0.8837, 0.59384, '0.158'), (0, '2024-09-13', 5, 'BOLSAINTERNACIONAL', 74, 0.9206, 0.27332, '0.095'),(0, '2024-09-13', 5, 'BOLSAUSA', 76, 0.9523, 0.46998, '0.171');
+INSERT INTO  resumen  ( id ,  fecha ,  dia_semana ,  fondo ,  n ,  peso_porc ,  porc_variacion ,  banco ) VALUES  (0, '2024-09-13', 5, 'BESTIDEAS', 24, 1, 0.64919, '0.125'), (0, '2024-09-13', 5, 'BOLSAESPANA', 31, 0.9444, 0.99272, '0.484'), (0, '2024-09-13', 5, 'BOLSAEUROPA', 57, 0.8837, 0.59384, '0.158'), (0, '2024-09-13', 5, 'BOLSAINTERNACIONAL', 74, 0.9206, 0.27332, '0.095'),(0, '2024-09-13', 5, 'BOLSAUSA', 76, 0.9523, 0.46998, '0.171');
                               
 
  
